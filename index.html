@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>taskManager Company</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	
@@ -32,8 +33,28 @@
 
 	<section>
 		<h1>Задачи</h1>
-		<div id="placeForTasks"></div>
+		<table>
+			<thead>
+				<tr>
+					<th>Сотрудник</th>
+					<th>id</th>
+					<th>Заголовок</th>
+					<th>Статус</th>
+				</tr>
+			</thead>
+			<tbody id="placeForTasks">
+			</tbody>
+		</table>
+		<!-- <div id="placeForTasks"></div> -->
 	</section>
+
+	<div id="popup" class="popup">
+		<div id="popup_block" class="popup_block">
+			<button class="popup_btn">Выполнить</button>
+			<button class="popup_btn">Взять в работу</button>
+			<button id="deleteTask" class="popup_btn">Удалить</button>
+		</div>
+	</div>
 
 	<script type="module" src="script.js"></script>
 </body>
